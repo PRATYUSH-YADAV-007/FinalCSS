@@ -47,7 +47,7 @@ a{
 }
 
 .hero-text{
-    width: 30%;
+    max-width: 450px; /*flex:1; this can also work*/
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -61,7 +61,6 @@ a{
 }
 .hero-text p{
     font-size: 18px;
-    text-wrap: wrap;
     color:#F9FAF8;
 }
 .bheader, .bcontent-3{
@@ -73,22 +72,24 @@ a{
     border-radius: 5px;
     padding: 5px 25px;
 }
-.img{
-    max-width: 90%;
+img{
+    max-width: 100%;
     height: 30%;
-    background-color: lightgray;
+}
+figure{
+    margin:0;
 }
 
 .content-1{
     background-color:white;
-    height:500px;
+    padding: 90px 0;
     text-align: center;
 }
 .title{
     color:#1F2937;
     font-size:36px;
     font-weight: 900;
-    margin:40px 0px;
+    margin: 0 0 40px 0;
 }
 .container{
     display: flex;
@@ -113,7 +114,7 @@ a{
 
 .content-2{
     background-color:#E5E7EB;
-    height:500px;
+    padding: 90px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +126,6 @@ a{
     font-size: 36px;
     font-weight:300;
     text-align: justify;
-    text-wrap: wrap;
 }
 .quotedBy{
     width:800px;
@@ -136,7 +136,7 @@ a{
 
 .content-3{
     background-color: white;
-    height:350px;
+    padding: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,12 +150,16 @@ a{
     align-items: center;
     padding:50px 100px;
 }
-.action p1{
+.action h3{
     color: white;
     font-size: 25px;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
-.action p2{
+.action p{
+    margin: 0;
+    padding: 0;
     color: white;
     font-size: 15px;
 }
@@ -169,7 +173,7 @@ a{
     background-color: #1F2937;
     font-size: 20px;
     font-weight: lighter;
-    height: 70px;
+    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
